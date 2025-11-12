@@ -4,41 +4,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GiziLearn — Pembelajaran Gizi Futuristik</title>
-    <meta name="description" content="GiziLearn — Situs pembelajaran gizi dengan scanner label, perbandingan makanan, dan daftar makanan tinggi gizi. Gratis, client-side, siap deploy." />
+    <meta name="description" content="GiziLearn — Pembelajaran gizi dengan scanner label, perbandingan makanan, dan daftar makanan tinggi gizi. Gratis, client-side, siap deploy." />
     <meta name="keywords" content="gizi, nutrisi, scanner gizi, tesseract, belajar gizi, makanan sehat" />
     <link rel="canonical" href="https://yourdomain.example/" />
+    <meta name="robots" content="index, follow" />
     <!-- Open Graph -->
     <meta property="og:title" content="GiziLearn — Pembelajaran Gizi Futuristik" />
     <meta property="og:description" content="Scanner label nutrisi, perbandingan makanan, dan daftar makanan tinggi gizi. Gratis dan berjalan client-side." />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="id_ID" />
-    <!-- Twitter card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <!-- Manifest (basic) -->
     <link rel="manifest" href="/manifest.json" />
-    <!-- Theme color -->
     <meta name="theme-color" content="#0f172a" />
-    <!-- Robots -->
-    <meta name="robots" content="index, follow" />
-    <!-- Tailwind CDN for quick styling -->
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      /* small futuristic glow tweaks */
-      .neon { text-shadow: 0 0 8px rgba(99,102,241,0.9); }
-      .glass { background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); backdrop-filter: blur(6px); }
+      body { background: radial-gradient(ellipse at top left, #0b0620 0%, #071032 50%, #020617 100%); }
+      .neon { text-shadow: 0 0 8px rgba(167,139,250,0.9); }
+      .glass { background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); backdrop-filter: blur(8px); border:1px solid rgba(255,255,255,0.04); border-radius:12px; }
+      .accent { color: #b980ff; }
+      .btn-accent { background: linear-gradient(90deg,#7c3aed,#b980ff); color: white; }
+      pre { white-space: pre-wrap; word-wrap: break-word; }
     </style>
-    <!-- Structured data JSON-LD (Organization + WebSite) -->
+    <!-- Structured data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "GiziLearn",
-      "url": "https://yourdomain.example/",
-      "description": "Situs pembelajaran gizi - scanner label, perbandingan makanan, daftar makanan tinggi gizi. Gratis dan berjalan di browser."
-    }
+    {"@context":"https://schema.org","@type":"WebSite","name":"GiziLearn","url":"https://yourdomain.example/","description":"Situs pembelajaran gizi - scanner label, perbandingan makanan, daftar makanan tinggi gizi. Gratis dan berjalan di browser."}
     </script>
+    <!-- AdSense placeholder: replace with your AdSense code in production -->
+    <!-- ADSENSE-PLACEHOLDER -->
   </head>
-  <body class="bg-[#071032] text-gray-100">
+  <body class="antialiased text-gray-100">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

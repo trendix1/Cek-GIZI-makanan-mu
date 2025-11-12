@@ -1,4 +1,14 @@
 
-/* Basic styles for futuristic theme */
-body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
-.aura { box-shadow: 0 4px 30px rgba(2,6,23,0.6); }
+/* Small styles for futuristic theme and settings */
+body{font-family:Inter,system-ui,Arial;}
+.neon{color:#b980ff;text-shadow:0 0 8px rgba(185,129,255,0.6);}
+.glass{background:linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.04);border-radius:12px}
+.btn{background:linear-gradient(90deg,#7c3aed,#b980ff);color:white;padding:8px 12px;border-radius:8px;border:none}
+.settings-panel { position: fixed; left: 0; top: 0; bottom: 0; width: 360px; transform: translateX(-100%); transition: transform 300ms cubic-bezier(.2,.8,.2,1); z-index: 60; padding: 20px; }
+.settings-panel.open { transform: translateX(0); }
+.settings-backdrop { position: fixed; inset:0; background: rgba(2,6,23,0.6); backdrop-filter: blur(2px); z-index:50; opacity:0; transition: opacity 200ms; }
+.settings-backdrop.show { opacity:1; }
+.toggle-gear { position: fixed; right: 18px; top: 18px; z-index:70; background: linear-gradient(90deg,#7c3aed,#b980ff); border-radius:10px; padding:8px; box-shadow:0 6px 18px rgba(124,58,237,0.25); }
+.select, .input, .textarea { width:100%; padding:8px; border-radius:8px; border:1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.02); color: #e6e6e6; margin-top:8px; }
+.small-muted { font-size:12px; color:#9ca3af; margin-top:6px; }
+.ad-placeholder { background: rgba(255,255,255,0.02); border:1px dashed rgba(255,255,255,0.06); padding:12px; text-align:center; color:#cbd5e1; border-radius:8px; margin-top:10px;}
